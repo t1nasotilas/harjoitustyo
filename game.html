@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Space Invaders</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style/sinvaders.css">
+</head>
+<body>
+    <nav class="navi">
+        <a href="index.html" id="navi1">TAKAISIN ETUSIVULLE</a>
+        <a href="#" id="navi2" onclick="resetGame(); return false;">ALOITA ALUSTA</a>
+    </nav>
+    <main>
+        <canvas id="gameCanvas"></canvas>
+        <div id="gameOverlay">
+            <h1 class="titteli">SPACE INVADERS</h1>
+            <p class="ohjeet">
+                Liiku nuolinäppäimillä ja ammu välilyönnillä! <br> <br>
+                Tuhoa kaikki viholliset voittaaksesi.
+            </p>
+            <button class="nappi" onclick="startGame()">Aloita</button>
+        </div>
+    </main>
+    <script src="./script/invaders.js"></script>
+</body>
+</html>

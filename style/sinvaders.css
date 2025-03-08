@@ -1,0 +1,106 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: black;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.navi {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 0.5vh;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+#navi1 {
+    margin-right: auto;
+    margin-left: 0.5vh;
+}
+#navi2 {
+    margin-left: auto;
+    margin-right: 0.5vh;
+}
+.navi a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1vw;
+    font-family: 'Press Start 2P';
+}
+
+.navi a:hover {
+    color: rgb(252, 252, 9);
+    transform: rotate(1deg);
+}
+main {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+#gameCanvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    image-rendering: crisp-edges;
+    image-rendering: pixelated;
+}
+
+#gameOverlay {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 1;
+}
+
+.titteli {
+    font-size: 5vw;
+    margin-bottom: 10vh;
+    color: rgb(252, 252, 9);
+    font-family: 'Press Start 2P', cursive;
+}
+
+.ohjeet {
+    font-size: 1.4vw;
+    margin-bottom: 5vh;
+    color: white;
+    font-family: 'Press Start 2P', cursive;
+}
+
+.nappi {
+    font-size: 1.5vw;
+    font-family: 'Press Start 2P', monospace;
+    border: none;
+    background-color: #000;
+    color: #fff;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.nappi:hover {
+    transform: scale(1.5);
+    color: rgb(252, 252, 9);
+}
+
+/* Lisää tähtien välkky animaatio */
+@keyframes twinkle {
+    0% { opacity: 0.2; }
+    50% { opacity: 1; }
+    100% { opacity: 0.2; }
+  }
+
