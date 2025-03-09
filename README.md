@@ -33,9 +33,9 @@
 
 └── style/
 
-├── etusivu.css
+├──   etusivu.css
 
-└── sinvaders.css
+└──   sinvaders.css
 
 3. Avaa `index.html` selaimessa (Chrome/Firefox suositeltu).
 
